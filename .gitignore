@@ -12,7 +12,7 @@
 /docs/node_modules
 # testing
 /coverage
-
+/docs/.next
 # next.js
 /.next/
 /out/

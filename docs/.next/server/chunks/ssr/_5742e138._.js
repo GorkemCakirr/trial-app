@@ -38,7 +38,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$mdx$2d$components$2e$js__$5b
 const metadata = {
     "title": "Welcome to My Documentation",
     "filePath": "app/page.mdx",
-    "timestamp": 1744807762607
+    "timestamp": 1744814909044
 };
 function useTOC(props) {
     return [

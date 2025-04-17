@@ -5,6 +5,10 @@ export async function middleware(request) {
   const {pathname, search} = request.nextUrl;
   console.log(pathname);
   if (pathname === "/docs") {
-    return NextResponse.rewrite(`${rewriteDomain}${pathname}${search}`);
+    return NextResponse.rewrite(`${rewriteDomain}/docs`);
   }
 }
+
+export const config = {
+  matcher: "/docs",
+};

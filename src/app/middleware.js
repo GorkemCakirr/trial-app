@@ -5,7 +5,7 @@ export async function middleware(request) {
   const {pathname, search} = request.nextUrl;
   console.log("pathname", pathname);
   if (pathname === "/docs") {
-    return NextResponse.rewrite(`${rewriteDomain}/docs`);
+    return NextResponse.redirect(`https://trial-app-docs.vercel.app/docs`);
   }
 }
 

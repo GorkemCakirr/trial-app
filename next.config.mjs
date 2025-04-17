@@ -12,8 +12,8 @@ export default {
         destination: `${DOCS_URL}/docs/:path*`,
       },
       {
-        source: "/docs-static/_next/:path*",
-        destination: `${DOCS_URL}/docs-static/_next/:path*`,
+        source: "/docs-static/:path*",
+        destination: `${DOCS_URL}/docs-static/:path*`,
       },
     ];
   },

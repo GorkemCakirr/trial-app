@@ -13,7 +13,7 @@ export default {
       },
       {
         source: "/docs-static/_next/:path*",
-        destination: `${DOCS_URL}/_next/:path*`,
+        destination: `${DOCS_URL}/docs-static/_next/:path*`,
       },
     ];
   },

@@ -5,6 +5,10 @@ export default {
         source: "/docs/:path*",
         destination: "https://trial-app-docs.vercel.app/:path*",
       },
+      {
+        source: "/docs",
+        destination: "https://trial-app-docs.vercel.app",
+      },
     ];
   },
 };

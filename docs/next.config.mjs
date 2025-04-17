@@ -6,4 +6,7 @@ const withNextra = nextra({});
 export default withNextra({
   basePath: "/docs",
   assetPrefix: "/docs-static",
+  images: {
+    remotePatterns: [{hostname: "bucketui.com"}],
+  },
 });

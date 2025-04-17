@@ -1,21 +1,66 @@
 import {Footer, Layout, Navbar} from "nextra-theme-docs";
-import {Banner, Head} from "nextra/components";
+import {Inter} from "next/font/google";
+import {Head} from "nextra/components";
 import {getPageMap} from "nextra/page-map";
 import "nextra-theme-docs/style.css";
+import Image from "next/image";
 
 export const metadata = {
   // Define your metadata here
   // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
+  title: "Bucket UI Documentation",
+  description: "Bucket UI Documentation",
+  icons: {
+    icon: "https://bucketui.com/favicon.ico",
+  },
 };
 
-const banner = <Banner storageKey="some-key">Nextra 4.0 is released 🎉</Banner>;
+// const banner = <Banner storageKey='some-key'>Nextra 4.0 is released 🎉</Banner>;
 const navbar = (
   <Navbar
-    logo={<b>Nextra</b>}
+    logo={
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          gap: "0.5rem",
+        }}
+      >
+        <Image
+          src="https://bucketui.com/favicon.ico"
+          alt="Bucket UI"
+          width={24}
+          height={24}
+        />
+        <span>Bucket UI</span>
+      </div>
+    }
     // ... Your additional navbar options
   />
 );
-const footer = <Footer>MIT {new Date().getFullYear()} © Nextra.</Footer>;
+const footer = (
+  <Footer>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        gap: "0.5rem",
+      }}
+    >
+      <Image
+        src="https://bucketui.com/favicon.ico"
+        alt="Bucket UI"
+        width={24}
+        height={24}
+      />
+      <span>Bucket UI © {new Date().getFullYear()}</span>
+    </div>
+  </Footer>
+);
+
+const inter = Inter({subsets: ["latin"]});
 
 export default async function RootLayout({children}) {
   return (
@@ -32,13 +77,14 @@ export default async function RootLayout({children}) {
       >
         {/* Your additional tags should be passed as `children` of `<Head>` element */}
       </Head>
-      <body>
+      <body className={inter.className}>
         <Layout
-          banner={banner}
+          //   banner={banner}
           navbar={navbar}
           pageMap={await getPageMap()}
-          docsRepositoryBase="https://github.com/shuding/nextra/tree/main/docs"
           footer={footer}
+          editLink={null}
+          feedback={{content: null}}
           // ... Your additional layout options
         >
           {children}

@@ -5,11 +5,11 @@ export default {
     return [
       {
         source: "/docs",
-        destination: `${DOCS_URL}/docs`,
+        destination: `${DOCS_URL}`,
       },
       {
         source: "/docs/:path*",
-        destination: `${DOCS_URL}/docs/:path*`,
+        destination: `${DOCS_URL}/:path*`,
       },
       {
         source: "/docs-static/:path*",

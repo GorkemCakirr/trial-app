@@ -5,7 +5,7 @@ export default {
     return [
       {
         source: "/docs",
-        destination: `${DOCS_URL}/docs`,
+        destination: `${DOCS_URL}`,
       },
       {
         source: "/docs/:path*",

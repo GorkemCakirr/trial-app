@@ -4,10 +4,6 @@ export default {
   async rewrites() {
     return [
       {
-        source: "/docs",
-        destination: `${DOCS_URL}/docs`,
-      },
-      {
         source: "/docs/:path*",
         destination: `${DOCS_URL}/docs/:path*`,
       },

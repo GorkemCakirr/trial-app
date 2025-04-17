@@ -1,5 +1,11 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+  "/getting-started/page": "app/getting-started/page.js",
   "/page": "app/page.js",
-  "/started/page": "app/started/page.js"
+  "/structure/authentication-flow/page": "app/structure/authentication-flow/page.js",
+  "/structure/bucket-selection/page": "app/structure/bucket-selection/page.js",
+  "/structure/content-display/page": "app/structure/content-display/page.js",
+  "/structure/navigation/page": "app/structure/navigation/page.js",
+  "/structure/page": "app/structure/page.js",
+  "/structure/preview-editing/page": "app/structure/preview-editing/page.js"
 }

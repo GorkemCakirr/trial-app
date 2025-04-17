@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "src/app/docs",
+    "baseUrl": "src/app/",
     "paths": {
       "@/styles/*": [
         "styles/*"

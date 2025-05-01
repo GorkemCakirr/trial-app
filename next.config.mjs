@@ -2,6 +2,7 @@ const DOCS_URL = "https://trial-app-docs.vercel.app";
 
 export default {
   async rewrites() {
+    console.log("rewrites");
     return [
       {
         source: "/docs",
